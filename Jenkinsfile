@@ -4,7 +4,7 @@ def url = "git@github.com:dukun88/literature-frontend.git"
 def branch = "Production"
 def dir = "literature-frontend"
 def userdock = "alfredo88"
-def compfile = "fe.yml"
+def compfile = "fe.yaml"
 def image = "masedo-frontend"
 def result = currentBuild.currentResult.toLowerCase()
 
