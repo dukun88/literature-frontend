@@ -12,7 +12,7 @@ pipeline {
     agent any
     stages {
         
-        stage('Pull Backend Repo') {
+        stage('Pull frontend Repo') {
             steps {
                 sshagent([credentials]) {
                     sh """ssh -o StrictHostkeyChecking=no ${server} <<EOF
@@ -25,7 +25,7 @@ pipeline {
             }
         }
             
-        stage('Build Database') {
+        stage('Build App') {
             steps {
                 sshagent([credentials]) {
                     sh """ssh -o StrictHostkeyChecking=no ${server} <<EOF
