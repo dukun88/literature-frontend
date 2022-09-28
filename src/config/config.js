@@ -1,7 +1,11 @@
 import axios from 'axios';
 
 export const API = axios.create({
+<<<<<<< HEAD
   baseURL: 'http:// https://api.alfredo.studentdumbways.my.id/api/v1'
+=======
+  baseURL: 'https://api.alfredo.studentdumbways.my.id/api/v1'
+>>>>>>> 93ef97c (Pre)
   // baseURL: 'https://literature-dw18lsfsq.herokuapp.com/api/v1',
 });
 
