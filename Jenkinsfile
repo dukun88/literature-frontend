@@ -49,8 +49,8 @@ pipeline {
             }
         }
  
-        stage('Send Notification') {
-            steps {
+        post('Send Notification') {
+            always {
             discordSend webhookURL: "https://discord.com/api/webhooks/1021335421482963015/uywS5a2wcsQIeoSXsgjzpCA65aCPLbl1VJU_2hR11rR9cIgp-2PifxR4Gu2ByQG3YBNt",
             title: "${env.JOB_BASE_NAME} #${env.BUILD_NUMBER}",
             result: currentBuild.currentResult,
